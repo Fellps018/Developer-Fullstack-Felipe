@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(24px);
     z-index: 10;
     box-shadow: 0 0 12px rgba(29, 29, 29, 0.548);
@@ -47,7 +47,7 @@
     display: flex;
     font-weight: bold;
     align-items: center;
-    background: linear-gradient(to left, rgb(21, 185, 160), rgb(18, 187, 137));
+    background: linear-gradient(to right, rgb(22, 185, 166), rgb(19, 186, 143), rgb(24, 192, 120));
     color: white;
     border-radius: 24px;
     padding: 14px;

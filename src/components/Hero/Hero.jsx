@@ -4,17 +4,20 @@ const Hero = () => {
     return ( 
     <main>
     <section id="hero" class="hero">
-        <div>
-    <img class="Hero-Image" src="https://wallpaper.forfun.com/fetch/dc/dcaa288fbf74a740a895e94219646ac5.jpeg"/>
-        </div>
     <div class="hero-content">
-        <h2><i class="fa-solid fa-gear"></i>   Desenvolvedor FullStack  <i class="fa-solid fa-server"></i></h2>
-        <p class="hero-subtitle">Transformando ideias em sistemas robustos e escaláveis</p>
+        <h2>Criando Experiências <span class="span-title">Digitais Únicas</span></h2>
+        <p class="hero-subtitle">Desenvolvedor Full Stack & Designer</p>
+        <p class="hero-subtitle-2">Transformo ideias em soluções digitais inovadoras. Especializado em criar interfaces modernas e funcionais que conectam pessoas e tecnologia de forma intuitiva e elegante.</p>
         <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">Ver projetos</a>
+        <a href="#projects" class="btn-primary">Ver projetos <i class="fa-solid fa-arrow-right-long"></i></a>
         <a href="#footer" class="btn-secondary">Contato</a>
         </div>
     </div>
+        <div class="Section-Image">
+            <div class="Section-Hero-Image">
+    <img class="Hero-Image" src="src/components/Hero/Images/6c9266916b4a27f55771f1b41f4de056.jpg" />
+            </div>
+        </div>
     </section>
     </main>
     )}
