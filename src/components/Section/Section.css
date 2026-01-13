@@ -1,0 +1,92 @@
+.Space-Section{
+position: relative;
+padding: 16%;
+width: auto;
+height: auto;
+top: 40px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.Space-Section-tables{
+background-color: white;
+height: auto;
+width: auto;
+display: flex;
+flex-wrap: wrap;
+}
+.tables{
+background-color: white;
+width: auto;
+height: auto;
+padding: 8%;
+border-radius: 16px;
+box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+color: black;
+}
+.obra-text{
+padding: 0px;
+margin: 0px;
+position: relative;
+color: black;
+font-weight: bold;
+}
+.author-text{
+padding: 0px;
+margin: 0px;
+position: relative;
+color: gray;
+font-weight: normal;
+}
+.tables-2{
+width: auto;
+height: auto;
+padding-top: 3%;
+display: grid;
+grid-template-columns: 2fr 2fr 2fr;
+flex-wrap: wrap;
+}
+.tables-min{
+background-color: white;
+width: auto;
+height: auto;
+padding: 4%;
+margin-left: 8px;
+margin-right: 8px;
+border-radius: 16px;
+box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+transition: 400ms;
+flex-wrap: wrap;
+color: black;
+}
+.tables-min:hover {
+transition: 400ms;
+transform: translateY(-10%);
+box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.8);
+}
+.text-tables{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: lighter;
+font-style: italic;
+}
+
+
+.div-item{
+width: auto;
+display: flex;
+}
+.item{
+border-radius: 12px;
+padding: 10px 14px 10px 14px;
+color: white;
+flex-wrap: wrap;
+background: linear-gradient(to right, rgb(22, 185, 166), rgb(19, 186, 143), rgb(24, 192, 120));
+}
+.div-text{
+color: rgb(105, 104, 104);
+}

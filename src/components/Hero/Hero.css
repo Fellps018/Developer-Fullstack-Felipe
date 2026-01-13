@@ -5,7 +5,7 @@ top: 100px;
 width: auto;
 height: auto;
 display: grid;
-grid-template-columns: 2fr 2fr;
+grid-template-columns: 4fr 4fr;
 justify-content:space-around;
 background-color: transparent;
 }
@@ -21,10 +21,6 @@ color: black;
 .hero h2 {
 font-size: 60px;
 color: rgb(17, 24, 38);
-}.span-title{
-background: linear-gradient(to right, rgb(22, 185, 166), rgb(19, 186, 143), rgb(24, 192, 120));
-background-clip:text;
-color: transparent;
 }
 .hero-subtitle {
 margin-top: 1px;
@@ -52,7 +48,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding: 26px;
-height: 80%;
+height: auto;
 width: 80%;
 box-shadow: 0px 0px 80px 40px rgb(184, 236, 224);
 flex-wrap: wrap;

@@ -12,9 +12,9 @@ body::-webkit-scrollbar {
 
 
 .btn-primary {
+width: auto;
 padding: 20px 40px 20px 40px;
-margin-left: 12px;
-margin-right: 12px;
+margin-right: 6px;
 margin-top: 20px;
 color: white;
 background-color: rgb(17, 24, 38);
@@ -32,9 +32,9 @@ transition-duration: 400ms;
 }
 
 .btn-secondary {
+    width: auto;
 padding: 20px 40px 20px 40px;
-margin-left: 12px;
-margin-right: 12px;
+margin-left: 6px;
 margin-top: 20px;
 color: rgb(17, 24, 38);
 border: 2px solid rgb(17, 24, 38);
@@ -51,4 +51,12 @@ transition-duration: 400ms;
     background-color: rgb(42, 53, 77);
     border:2px solid rgb(42, 53, 77);
     transition-duration: 400ms;
+}
+.span-title {
+    background: linear-gradient(to right, rgb(22, 185, 166), rgb(19, 186, 143), rgb(24, 192, 120));
+    background-clip: text;
+    color: transparent;
+}
+a{
+    text-decoration: none;
 }

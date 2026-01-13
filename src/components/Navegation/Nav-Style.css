@@ -21,6 +21,7 @@
 }
 .nav-link {
     color: black;
+    font-weight:600;
     display: flex;
     padding: 0 20px;
     margin: 8px;
@@ -66,8 +67,7 @@
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .menu-toggle:active{
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 400ms;
+background: linear-gradient(to right, rgb(13, 119, 107), rgb(11, 121, 93), rgb(13, 114, 70));
 }
 .image{
     position: relative;
