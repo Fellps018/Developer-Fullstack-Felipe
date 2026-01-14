@@ -2,7 +2,7 @@ import './Section.css'
 
 const Section = () => {
     return (
-        <div class="Space-Section">
+        <div id="Destaque" class="Space-Section">
             <div class="Space-Section-tables">
                 <div class="tables">
                     <h2 class="text-tables"><span class="span-title"  ><i class="fa-solid fa-quote-left"></i></span>
