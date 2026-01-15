@@ -9,8 +9,8 @@ const Hero = () => {
         <p class="hero-subtitle">Desenvolvedor Full Stack & Designer</p>
         <p class="hero-subtitle-2">Transformo ideias em soluções digitais inovadoras. Especializado em criar interfaces modernas e funcionais que conectam pessoas e tecnologia de forma intuitiva e elegante.</p>
         <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">Ver projetos <i class="fa-solid fa-arrow-right-long"></i></a>
-        <a href="#footer" class="btn-secondary">Contato</a>
+        <a href="#Projetos" class="btn-primary">Ver projetos <i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="#Final" class="btn-secondary">Contato</a>
         </div>
     </div>
         <div class="Section-Image">

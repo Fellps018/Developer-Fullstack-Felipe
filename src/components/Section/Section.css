@@ -26,7 +26,7 @@ width: auto;
 height: auto;
 padding: 8%;
 border-radius: 16px;
-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 color: black;
 }
 .obra-text{
@@ -62,7 +62,7 @@ padding-right: 8%;
 margin-left: 8px;
 margin-right: 8px;
 border-radius: 16px;
-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 transition: 400ms;
 flex-wrap: wrap;
 color: black;

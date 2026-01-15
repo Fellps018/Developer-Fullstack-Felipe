@@ -4,10 +4,10 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(24px);
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(100px);
     z-index: 10;
-    box-shadow: 0 0 12px rgba(29, 29, 29, 0.548);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .header-container {
     max-width: 1200px;

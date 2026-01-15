@@ -1,59 +1,80 @@
 const projects = [
     {
-    title: "",
-    description: "",
-    technologies: ["", "", "", ""],
+    icon: "fa-solid fa-x",
+    title: "Sem Projetos",
+    description: "Esse card são para os projetos disponíveis",
+    technologies: ["###", "###", "###", "###"],
     githubLink: "",
     demoLink: "",
     },
-    {
-    title: "",
-    description: "",
-    technologies: ["", "", "", ""],
+      {
+    icon: "fa-solid fa-x",
+    title: "Sem Projetos",
+    description: "Esse card são para os projetos disponíveis",
+    technologies: ["###", "###", "###", "###"],
     githubLink: "",
     demoLink: "",
     },
-    {
-    title: "",
-    description: "",
-    technologies: ["", "", "", ""],
+      {
+    icon: "fa-solid fa-x",
+    title: "Sem Projetos",
+    description: "Esse card são para os projetos disponíveis",
+    technologies: ["###", "###", "###", "###"],
     githubLink: "",
     demoLink: "",
     }
 ]
 
-// Renderizar projetos
-const projectsGrid = document.querySelector(".projects-grid");
-projects.forEach((project) => {
-const projectCard = document.createElement("div");
-projectCard.className = "project-card";
-
-projectCard.innerHTML = `
-    <div class="project-image">
-        <i class="fas fa-code"></i>
-    </div>
-    <div class="project-content">
-        <h3 class="project-title">${project.title}</h3>
-        <p class="project-description">${project.description}</p>
-        <div class="project-tech">
-        ${project.technologies
-            .map((tech) => `<span class="tech-tag">${tech}</span>`)
-            .join("")}
+const ProjectsGrid = () => {
+  return (
+    <div className="projects-grid">
+      {projects.map((project, index) => (
+        <div key={index} className="project-card">
+          <div className="card-header">
+            <div className="project-icon">
+              <i className={project.icon}></i>
+            </div>
+            <div className="project-title-wrapper">
+              <h3 className="project-title">{project.title}</h3>
+            </div>
+          </div>
+          
+          <p className="project-description">{project.description}</p>
+          
+          {}
+          <div className="project-tech">
+            {project.technologies.map((tech, techIndex) => (
+              <span key={techIndex} className="tech-tag">
+                {tech}
+              </span>
+            ))}
+          </div>
+          
+          <div className="project-divider"></div>
+          
+          <div className="project-footer">
+            <span className="project-type">Web App</span>
+            <div className="project-links">
+              <a 
+                href={project.githubLink} 
+                className="project-link"
+                aria-label="GitHub"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a 
+                href={project.demoLink} 
+                className="project-link"
+                aria-label="Demo"
+              >
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-        <a href="${project.githubLink}" target="_blank" class="project-link">
-            <i class="fab fa-github"></i> Código
-        </a>
-        ${
-            project.demoLink !== "#"
-            ? `<a href="${project.demoLink}" target="_blank" class="project-link">
-            <i class="fas fa-external-link-alt"></i> Demo
-            </a>`
-            : ""
-        }
-        </div>
+      ))}
     </div>
-    `;
+  );
+};
 
-projectsGrid.appendChild(projectCard);
-});
+export default ProjectsGrid;

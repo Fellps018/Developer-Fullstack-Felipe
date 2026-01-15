@@ -1,4 +1,6 @@
 import './Projects.css'
+import ProjectsGrid from './projetos/projetos'
+
 
 const Projects = () => {
     return (
@@ -12,12 +14,15 @@ const Projects = () => {
             </div>
                 <div class="section-container">
                     <div class="projects-grid">
-                    
+                        {ProjectsGrid()}
                     </div>
                 </div>
                 <a href="" id="button" class="btn-primary">Ver todos os projetos <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
     )
 }
+
+
+
 
 export default Projects

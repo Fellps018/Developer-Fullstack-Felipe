@@ -4,7 +4,7 @@ const Nav = () =>{
     return(
 <header class="header">
     <div class="header-container">
-    <a title="Sobre mim" href="/Sobre mim"> <img class="image" src="src/components/Navegation/Images/Trabalho.jpeg"/> </a>
+    <a title="Sobre mim" href=""> <img class="image" src="src/components/Navegation/Images/Trabalho.jpeg"/> </a>
     <nav class="nav">
         <a href="#Apresentação" class="nav-link"><i class="fa-solid fa-person-chalkboard"></i> Apresentação</a>
         <a href="#Projetos" class="nav-link"><i class="fas fa-project-diagram"></i> Projetos</a>

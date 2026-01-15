@@ -1,5 +1,12 @@
 import './Footer.css'
 
+function YearDisplay() {
+    const currentYear = new Date().getFullYear();
+    return currentYear
+}
+
+
+
 const Footer  = () => {
     return (
             <div id="Final" class="Footer">
@@ -13,8 +20,8 @@ const Footer  = () => {
                     </div>
                     <div class="Nav">
                     <h4>Contato:</h4>
-                    <a href="malito:felipe.catarino.dev@gmail.com"><i class="fa-solid fa-at"></i> felipe.catarino.dev@gmail.com</a>
-                    <a href="https://wa.me/5515997238091"><i class="fa-solid fa-phone"></i> +55 (15)997238091</a>
+                    <a href="mailto:felipe.catarino.dev@gmail.com"><i class="fa-solid fa-at"></i> felipe.catarino.dev@gmail.com</a>
+                    <a href="https://wa.me/5515997238091"><i class="fa-solid fa-phone"></i> +55 15 99723-8091</a>
                     </div>
                     <div class="Nav">
                     <h4>Links:</h4>
@@ -22,12 +29,10 @@ const Footer  = () => {
                     <a href="https://github.com/Fellps018"><i class="fa-brands fa-github"></i> GitHub</a>
                     </div>
                 </div>
-                <p class="p">&copy; <span id="year"></span> Felipe Catarino de Souza. Todos os direitos reservados.</p>
+                <p class="p"><span id="year">{YearDisplay()}©</span> Felipe Catarino de Souza. Todos os direitos reservados.</p>
             </div>
     )
 }
-//const yaer = document.getElementById("year")
-//yaer.textContent = new Date().getFullYear();
 
 
 
