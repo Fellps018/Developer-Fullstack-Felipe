@@ -95,7 +95,7 @@ flex-wrap: wrap;
 }
 
 .project-card:hover {
-    transform: translateY(-5%);
+    transform: translateY(-10%);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -228,6 +228,7 @@ flex-wrap: wrap;
     color: #0f0f0f;
     font-size: 1.125rem;
     transition: all 0.2s ease;
+    border: 1px solid #eaeaea;
     padding: 6px;
     border-radius: 24px;
     display: flex;
@@ -238,9 +239,10 @@ flex-wrap: wrap;
 }
 
 .project-link:hover {
+    border: 1px solid rgba(128, 128, 128, 0);
     color: #ffffff;
     background: rgb(22, 185, 163);
-    transform: translateY(-2%);
+    transform: translateY(-5%);
 }
 
 /* Responsividade */
