@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Portfolio_React/static/css/main.e4948eda.css",
+    "main.js": "/Portfolio_React/static/js/main.ceaf16fb.js",
+    "index.html": "/Portfolio_React/index.html",
+    "main.e4948eda.css.map": "/Portfolio_React/static/css/main.e4948eda.css.map",
+    "main.ceaf16fb.js.map": "/Portfolio_React/static/js/main.ceaf16fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4948eda.css",
+    "static/js/main.ceaf16fb.js"
+  ]
+}
