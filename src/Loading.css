@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 
 .btn-primary {
 width: auto;
-padding: 20px 40px 20px 40px;
+padding: 10px 30px 10px 30px;
 margin-right: 6px;
 margin-top: 20px;
 color: white;
@@ -33,7 +33,7 @@ transition-duration: 400ms;
 
 .btn-secondary {
     width: auto;
-padding: 20px 40px 20px 40px;
+padding: 10px 30px 10px 30px;
 margin-left: 6px;
 margin-top: 20px;
 color: rgb(17, 24, 38);
@@ -134,6 +134,3 @@ font-size: 20px;
 color: #00ff73;
 }
 
-
-
-/*Responsividade Geral

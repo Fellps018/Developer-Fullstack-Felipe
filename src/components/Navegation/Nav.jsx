@@ -1,19 +1,93 @@
-import './Nav-Style.css'
+import React, { useState, useEffect } from 'react';
+import './Nav-Style.css';
 
-const Nav = () =>{
-    return(
-<header class="header">
-    <div class="header-container">
-    <a title="Sobre mim" href=""> <img class="image" src="src/components/Navegation/Images/Trabalho.jpeg"/> </a>
-    <nav class="nav">
-        <a href="#Apresentação" class="nav-link"><i class="fa-solid fa-person-chalkboard"></i> Apresentação</a>
-        <a href="#Projetos" class="nav-link"><i class="fas fa-project-diagram"></i> Projetos</a>
-        <a href="#Destaque" class="nav-link"><i class="fas fa-user"></i> Destaque</a>
-        <a href="#Final" class="nav-link"><i class="fas fa-envelope"></i> Contato</a>
-    </nav>
-    <a href="https://wa.me/5515997238091" title="Entrar em contato via Whatssapp" class="menu-toggle">Vamos Conversar</a>
-    </div>
-</header>
-    )
-}
-export default Nav
+const Nav = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
+    // Fechar menu quando a tela for redimensionada para desktop
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 792) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // Scroll suave para as seções
+    const handleNavClick = (e, sectionId) => {
+        e.preventDefault();
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const offset = 80;
+            const elementPosition = element.offsetTop - offset;
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+        }
+        // Fechar menu no mobile após clicar
+        if (window.innerWidth <= 792) {
+            setIsMenuOpen(false);
+        }
+    };
+
+    // Alternar menu mobile
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    // Fechar menu ao clicar no overlay
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
+    return (
+        <header className="header">
+            <div className="header-container">
+                <a title="Sobre mim" href="#home" className="logo-link" onClick={(e) => handleNavClick(e, 'home')}>
+                    <img className="image" src="src/components/Navegation/Images/Trabalho.jpeg" alt="Foto de perfil"/>
+                </a>
+                
+                <button className="mobile-menu-btn" id="mobileMenuBtn" onClick={toggleMenu}>
+                    <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                </button>
+                
+                <nav className={`nav ${isMenuOpen ? 'active' : ''}`} id="mainNav">
+                    <a href="#Apresentação" className="nav-link" onClick={(e) => handleNavClick(e, 'Apresentação')}>
+                        <i className="fa-solid fa-person-chalkboard"></i> Apresentação
+                    </a>
+                    <a href="#Projetos" className="nav-link" onClick={(e) => handleNavClick(e, 'Projetos')}>
+                        <i className="fas fa-project-diagram"></i> Projetos
+                    </a>
+                    <a href="#Destaque" className="nav-link" onClick={(e) => handleNavClick(e, 'Destaque')}>
+                        <i className="fas fa-user"></i> Destaque
+                    </a>
+                    <a href="#Final" className="nav-link" onClick={(e) => handleNavClick(e, 'Final')}>
+                        <i className="fas fa-envelope"></i> Contato
+                    </a>
+                </nav>
+                
+                {/* Botão WhatsApp para desktop */}
+                <a href="https://wa.me/5515997238091" 
+                    title="Entrar em contato via WhatsApp" 
+                    className="menu-toggle desktop-menu-toggle"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <i className="fab fa-whatsapp"></i> Vamos Conversar
+                </a>
+            </div>
+            
+            {/* Overlay para mobile */}
+            <div 
+                className={`mobile-overlay ${isMenuOpen ? 'active' : ''}`} 
+                id="mobileOverlay" 
+                onClick={closeMenu}
+            ></div>
+        </header>
+    );
+};
+
+export default Nav;

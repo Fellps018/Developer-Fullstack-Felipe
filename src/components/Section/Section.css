@@ -88,3 +88,21 @@ background: linear-gradient(to right, rgb(22, 185, 166), rgb(19, 186, 143), rgb(
 .div-text{
 color: rgb(105, 104, 104);
 }
+
+@media screen and (max-width: 792px) {
+.tables {
+        padding: 12%;
+    }
+
+.tables-2 {
+        width: auto;
+        height: auto;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+.tables-min {
+    margin-top: 24px;
+}
+}

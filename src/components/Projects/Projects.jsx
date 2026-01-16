@@ -17,7 +17,7 @@ const Projects = () => {
                         {ProjectsGrid()}
                     </div>
                 </div>
-                <a href="" id="button" class="btn-primary">Ver todos os projetos <i class="fa-solid fa-arrow-right-long"></i></a>
+                <a href="" class="btn-primario">Ver todos os projetos <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
     )
 }

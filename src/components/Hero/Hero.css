@@ -10,7 +10,7 @@ justify-content:space-around;
 background-color: transparent;
 }
 .hero-content {
-padding: 60px;
+padding: 6%;
 background-color: transparent;
 display: flex;
 flex-direction: column;
@@ -60,4 +60,26 @@ top: 0px;
 height: 100%;
 width: 100%;
 flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 792px) {
+.hero-content {
+        padding: 0px;
+    }
+.hero {
+        position: relative;
+        top: 100px;
+        padding: 3%;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: transparent;
+    }
+.hero h2{
+    font-size: 48px;
+}
 }
