@@ -82,4 +82,8 @@ flex-wrap: wrap;
 .hero h2{
     font-size: 48px;
 }
+        
+.Section-Image{
+margin-top: 24px;
+}
 }
