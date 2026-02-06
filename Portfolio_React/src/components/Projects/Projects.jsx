@@ -17,7 +17,7 @@ const Projects = () => {
                         {ProjectsGrid()}
                     </div>
                 </div>
-                <a href="" class="btn-primario">Ver todos os projetos <i class="fa-solid fa-arrow-right-long"></i></a>
+                <a href="https://fellps018.github.io/Error-404/" class="btn-primario">Ver todos os projetos <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
     )
 }
