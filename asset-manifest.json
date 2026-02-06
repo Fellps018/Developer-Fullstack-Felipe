@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Developer-Fullstack-Felipe/static/css/main.bbc7cfea.css",
-    "main.js": "/Developer-Fullstack-Felipe/static/js/main.ccf9fff8.js",
+    "main.css": "/Developer-Fullstack-Felipe/static/css/main.b6f5adca.css",
+    "main.js": "/Developer-Fullstack-Felipe/static/js/main.d1925cec.js",
     "static/media/jpg": "/Developer-Fullstack-Felipe/static/media/6c9266916b4a27f55771f1b41f4de056.013c7ed9f7b56868444f.jpg",
     "static/media/Trabalho.jpeg": "/Developer-Fullstack-Felipe/static/media/Trabalho.de600b779f79622f0da4.jpeg",
     "index.html": "/Developer-Fullstack-Felipe/index.html",
-    "main.bbc7cfea.css.map": "/Developer-Fullstack-Felipe/static/css/main.bbc7cfea.css.map",
-    "main.ccf9fff8.js.map": "/Developer-Fullstack-Felipe/static/js/main.ccf9fff8.js.map"
+    "main.b6f5adca.css.map": "/Developer-Fullstack-Felipe/static/css/main.b6f5adca.css.map",
+    "main.d1925cec.js.map": "/Developer-Fullstack-Felipe/static/js/main.d1925cec.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbc7cfea.css",
-    "static/js/main.ccf9fff8.js"
+    "static/css/main.b6f5adca.css",
+    "static/js/main.d1925cec.js"
   ]
 }
