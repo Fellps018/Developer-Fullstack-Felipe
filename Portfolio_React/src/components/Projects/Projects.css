@@ -134,6 +134,13 @@ flex-wrap: wrap;
     line-height: 1.3;
 }
 
+.project-image{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+
+}
+
 /* PARTE CORRIGIDA - Linguagens lado a lado */
 .project-tech {
     display: flex;
@@ -160,10 +167,6 @@ flex-wrap: wrap;
 .project-tech::-webkit-scrollbar-thumb {
     background: #c1c1c1;
     border-radius: 10px;
-}
-
-.project-tech::-webkit-scrollbar-thumb:hover {
-    background: #a1a1a1;
 }
 
 .tech-tag {

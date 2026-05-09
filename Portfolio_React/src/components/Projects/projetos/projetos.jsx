@@ -1,6 +1,7 @@
 const projects = [
     {
     icon: "fa-solid fa-x",
+    image: "",
     title: "Sem Projetos",
     description: "Esse card são para os projetos disponíveis",
     technologies: ["###", "###", "###", "###"],
@@ -31,6 +32,7 @@ const ProjectsGrid = () => {
       {projects.map((project, index) => (
         <div key={index} className="project-card">
           <div className="card-header">
+            <img src={project.image} className="project-image"/>
             <div className="project-icon">
               <i className={project.icon}></i>
             </div>
